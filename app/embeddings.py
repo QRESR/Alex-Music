@@ -130,6 +130,37 @@ def _ensure_model():
     return _MODEL, _PROC
 
 
+def _read_via_ffmpeg(audio_bytes: bytes) -> tuple:
+    """Чтение аудио через ffmpeg (для форматов, нечитаемых soundfile: M4A/MP4).
+
+    Возвращает (wav: np.float32 1D, sr: int). Бросает RuntimeError при сбое.
+    """
+    import subprocess
+    import tempfile, os
+    import soundfile as sf   # локальный импорт: _compute_audio импортирует sf локально
+    with tempfile.NamedTemporaryFile(suffix=".m4a", delete=False) as _f:
+        _f.write(audio_bytes)
+        _in = _f.name
+    _out = _in + ".wav"
+    try:
+        _r = subprocess.run(
+            ["ffmpeg", "-v", "error", "-y", "-i", _in,
+             "-f", "wav", "-acodec", "pcm_s16le", _out],
+            capture_output=True, timeout=60,
+        )
+        if _r.returncode != 0 or not os.path.exists(_out) or os.path.getsize(_out) == 0:
+            raise RuntimeError(
+                f"ffmpeg rc={_r.returncode}: {_r.stderr.decode('utf-8', 'replace')[:200]}")
+        wav, sr = sf.read(_out, dtype="float32", always_2d=True)   # 2D — как sf.read в _compute_audio
+        return wav, sr
+    finally:
+        for _p in (_in, _out):
+            try:
+                os.unlink(_p)
+            except OSError:
+                pass
+
+
 def _compute_audio(audio_bytes: bytes) -> list[float]:
     """Один эмбеддинг трека: фикс. окна 10 с → mean-pool → L2 (детерминизм)."""
     import numpy as np
@@ -138,7 +169,14 @@ def _compute_audio(audio_bytes: bytes) -> list[float]:
     import torch
 
     SR, WINDOW_S, BATCH, MIN_SEG_S = 48000, 10.0, 6, 1.0
-    wav, sr = sf.read(io.BytesIO(audio_bytes), dtype="float32", always_2d=True)
+    try:
+        wav, sr = sf.read(io.BytesIO(audio_bytes), dtype="float32", always_2d=True)
+    except Exception as _sf_err:  # noqa: BLE001 — ВК отдаёт audio/mp4 (M4A),
+        # а soundfile/libsndfile не читает MP4 → «Format not recognised».
+        # ФФМПЕГ-фолбэк: конвертируем в wav в памяти и читаем. Так CLAP
+        # заработает и для ВК-треков (свой путь, без смешивания с Яндексом).
+        logger.debug("soundfile failed (%s) — ffmpeg fallback", _sf_err)
+        wav, sr = _read_via_ffmpeg(audio_bytes)
     wav = wav.mean(axis=1)
     if sr != SR:
         wav = soxr.resample(wav, sr, SR)
