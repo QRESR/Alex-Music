@@ -13,3 +13,8 @@ __pycache__/
 *.tmp
 *.swp
 .DS_Store
+
+# Внутренний инструмент разработки — НЕ публичный
+mimo_proxy.py
+research/
+scripts/

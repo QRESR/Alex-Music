@@ -1,8 +1,8 @@
-"""FastAPI application — YouTube Music Proxy Server.
+"""FastAPI application — Alex Music server.
 
 Endpoints:
     GET/HEAD /stream/{id}        — audio stream (Range proxy)
-    GET       /search?q=...      — search YouTube tracks
+    GET       /search?q=...      — search tracks (Yandex / VK)
     GET       /track/{id}        — track metadata
     GET       /health            — healthcheck
 
@@ -89,14 +89,14 @@ async def _periodic_cleanup():
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     task = asyncio.create_task(_periodic_cleanup())
-    logger.info("YouTube Music Proxy started")
+    logger.info("Alex Music server started")
     yield
     task.cancel()
-    logger.info("YouTube Music Proxy stopped")
+    logger.info("Alex Music server stopped")
 
 
 app = FastAPI(
-    title="YouTube Music Proxy",
+    title="Alex Music",
     version="1.0.0",
     lifespan=lifespan,
 )
@@ -183,7 +183,7 @@ async def api_search(
     ctx: str = Query("", description="Текущий трек («артист - название») для подборки по настроению"),
     source: str = Query("auto", description="auto|yandex|vk — какой источник основной (для переключателя в приложении)"),
 ):
-    """Search YouTube, with optional Alice-like intent handling.
+    """Search tracks (Yandex/VK), with optional Alice-like intent handling.
 
     mix=1 -> return a related SET (playlist/radio) instead of a literal match.
     The response carries `intent` so the client knows whether to autoplay a

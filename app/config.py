@@ -1,4 +1,4 @@
-"""Configuration for YouTube Music Proxy."""
+"""Configuration for Alex Music."""
 
 import os
 from dataclasses import dataclass, field
