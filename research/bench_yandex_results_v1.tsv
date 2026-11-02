@@ -1,0 +1,94 @@
+i	cat	n	dt	q	top1	top2	top3	err
+1	artist	3	4.9	Баста	Баста - Выпускной (Медлячок)	BASTA! - Basta	Баста, Моя Мишель - Если я буду танцевать	
+2	artist	10	4.4	эминем	Eminem - Houdini	Eminem, Dido - Stan	Eminem - Mockingbird	
+3	artist	8	5.2	Kate Bush	Kate Bush - Army Dreamers	Kate Bush - Babooshka	Kate Bush - Wuthering Heights	
+4	artist	10	5.8	the cranberries zombie	The Cranberries - Zombie	The Cranberries, uSpeed - Zombie	The Cranberries, Iain Cook - Zombie	
+5	artist	10	4.9	Linkin Park	Linkin Park - Numb	Linkin Park - In the End	Linkin Park - Faint	
+6	artist	10	4.5	Мумий Тролль	Мумий Тролль - Мумий Тролль версия	Мумий Тролль, Schier - Jimolost	Мумий Тролль - Владивосток 2000	
+7	artist	10	4.8	Сплин	Сплин - Орбит без сахара	Сплин - Выхода нет	Непоэт - Сплин	
+8	artist	10	19.6	Radiohead	Chris L., Radiohead - Radiohead - Karma Police (Hybrid Mix)	Radiohead - Creep	Radiohead - Street Spirit	
+9	artist	10	4.2	Кино группа	КИНО - Группа крови	Кино Фильм - Группа крови	КИНО - Фильмы	
+10	artist	10	4.7	Нервы	Нервы - Нервы	SHAQINA - Действуешь на нервы	StaFFорд63, НЕ.KURILI - Нервы	
+11	artist	2	4.4	remake souls	Kaya Project, Pooja Tiwari, Globular - Souls Entwined	Remade - Old Souls		
+12	artist	10	5.6	даша астафьева	Даша Астафьева - Управляй мной	MavLaris - Даша	Basimov - Даша	
+13	track	9	6.0	катя буш running up that hill	Placebo, Kate Bush - Running Up That Hill	Kate Bush, Orkidea - Running Up That Hill (FSOE 541)	Kate Bush - Running Up That Hill (A Deal With God) - Live On Wogan Show 1985	
+14	track	0	4.1	случайная любовь текст				
+15	track	10	4.2	выпускной баста	Баста - Выпускной (Медлячок)	Баста - Выпускной	Баста - Я найду тебя через века	
+16	track	10	4.2	stan eminem	Eminem - Stan	Eminem, Dido - Stan	Various Artists - Eminem Tribute - Stan	
+17	track	10	49.9	грустная песня про проводы	XOLIDAYBOY - ГРУСТНАЯ И КРАСИВАЯ	egorka123 - грустн	dudemade! - блеод тайп грустн	
+18	track	10	4.5	shape of you	Jamie Cullum - Shape Of You	Acko, Wontu, Paul Hawksworth - Shape Of You	No Resolve - Shape of You	
+19	track	10	4.5	blinding lights	Loi - Blinding Lights	The Weeknd - Blinding Lights	Saint Asonia - Blinding Lights	
+20	track	8	4.2	где же ты была	Елена Карпук - Где же ты была	ЗоХа - Где же ты была	Guru-AI - Где же ты была	
+21	track	10	5.4	восьмиклассница ваганова	Три желания - Восьмиклассница	GSPD - Восьмиклассница	КИНО - Восьмиклассница	
+22	track	10	28.0	ты же помнишь текст песни	Dzewan - Текст	pisoso - Забыл текст	Hell.DowN, Rewas - Нахуй текст	
+23	track	1	4.4	малыш мой кристалла	Bal Tazara - Грани кристалла			
+24	track	1	5.3	тает лёд грибы	Грибы, Sимптом - Тает лёд			
+25	genre	10	30.0	рэп подборка	LACAZETTE - RAP	Comeback Frapper Smith - Rap	ERIKMASTER - ITALIAN BRAINROT RAP	
+26	genre	10	3.6	электронная музыка	Хитовый чел, Лучшие песни - Энергия Ночи – Электронная музыка свежие альбомы	Хаме-леоН - Электронная	Хитовый чел, Вечеринка - Без остановки сердца – Нью-диско танцевальная электронная музыка летние хиты	
+27	genre	10	32.9	рок 90-х	Queen - We Will Rock You	Пилот - Рок	Алиса - Рок	
+28	genre	10	18.7	русский рок	Нанта - Русский Рок	РА - Русский рок	Парадарайя - Русский рок	
+29	genre	10	18.7	джаз расслабленный	Tellman - Jazz	Xcho - Джаз	byekid - Jazz	
+30	genre	10	45.8	классическая музыка для работы	Инструментальная, Классическая музыка 1 час - Спокойная музыка для работы	Инструментальная, Пианино музыка, Chillout Lounge Piano, Классическая - Красивая музыка на пианино для дома работы и покоя	Инструментальная, Классическая, Спокойная инструментальная музыка, Красивая музыка без слов - Светлая Дорога Через Тишину. Инструментальная Музыка Для Отдыха, Работы, Чтения, Учёбы, Вдохновения, Фона И Спокойных Вечеров С Красивым Звучанием И Мягкой Атмосферой Каждый День	
+31	genre	10	19.1	хип хоп 2000-х	Radio FREE Crocketts - KHIP Hollister	 - KHIP Airchecks	Robert Zerwekh - KHIP 93.5 Hollister, CA 12 October 1985	
+32	genre	10	26.7	инди поп	BLXCKBUSTA - JAY VOO	RAFA MOON - INDI	Duet Gold Star - Sphere of Dance	
+33	genre	10	53.3	метал тяжелый	Heavy Metal - Metal	MrClaps - This Heavy Metal	Alec Koff - At Heavy Metal	
+34	genre	10	26.8	кантри	IL'HAN - Country	Дикарь - В ритме спорта	Дикий запад - Кантри	
+35	mood	10	18.7	спокойная расслабляющая музыка	Музыка для работы и фона, Природа, Relaxing music, Фоновая музыка, РЕЛАКС, Романтическая музыка - Романтическая музыка для медленного танца	DK_FF - Френдзона	PLUWG - Для себя	
+36	mood	10	34.7	бодрая музыка в дорогу	Маша Сладкова - Бодрая	Маргарита Малкина - Новогодняя песня	Anorsel - Едем к деду!	
+37	mood	10	27.3	грустная музыка под дождь	Аниматор - Верити	Стас Михайлов - Лучшая на свете	XOLIDAYBOY - ГРУСТНАЯ И КРАСИВАЯ	
+38	mood	9	47.2	романтическая музыка для ужина	Vond Ace, Романтическая музыка - Романтическая музыка для предложения руки и сердца. vol 3	romanticLove, Романтическая музыка - Спокойная романтическая музыка	romanticLove, Романтическая музыка - Романтическая инструментальная музыка	
+39	mood	3	46.4	энергичная музыка для тренировки	Тренировка и Спорт. Фитнес и Бег, РЕЛАКС, Танцевальная клубная музыка, Русский клубняк, Энергичная Весёлая Музыка, Современная Танцевальная Музыка - Лучшая музыка для спорта	culb33i, Энергичная Весёлая Музыка - Энергичная музыка без слов	Музыка для спорта, Энергичная Весёлая Музыка, Русский техно рейв 90 х, Русские Хиты, Красивая фоновая Музыка, Deep House - Спортивный трек	
+40	mood	0	60.1	меланхоличная музыка вечером				timed out
+41	mood	10	25.2	танцевальная музыка на вечеринку	Slayyyter - DANCE...	Fall Out Boy - Dance, Dance	SH3TLVIZ - Dance	
+42	mood	10	50.5	тихая музыка для сна	Медитативная музыка, Восстановление сил, Расслабляющая Музыка для Сна, Deep Sleep Music Experience, Оазис Глубокой Сна - Тихая Ночь. Музыка для Спокойного Отдыха	sleepmylove, Для сна - Тихая музыка для сна	sleepmylove, Для сна - Тихая расслабляющая музыка для ночного сна	
+43	season	10	36.9	новогодняя музыка	Дилижанс - Новогодняя	Алёна.exe - Новогодняя	DjAl333 - Новогодняя	
+44	season	6	37.0	песни про зиму	Maxtones Pro dkk - JIHAN AUDY 2019	Murottal Pro - Surah Al Waqiah Salim Bahanan	New York Pro Musica - Spanish Music Of The Renaissance	
+45	season	10	54.0	музыка на 8 марта	 - fuego stereo 101.9 santa marta	 - Balai Budaya Minomartani FM 	Волшебные поздравления - Прикольное поздравление с 8 марта	
+46	season	10	57.0	майская песня	OLYA MAYSKAYA - Милый	OLYA MAYSKAYA - Воспоминания	OLYA MAYSKAYA - Вера	
+47	season	3	30.6	шум моря музыка	ШУМ ДЛЯ СНА - Коричневый шум	Nature Sound Series, Deep Sleep, Шум моря и Звук океана, Звук Моря - Настоящий успокаивающий подводный эмбиент	Шум Моря Коллекция - Эмбиент	
+48	ost	10	19.6	музыка из сериала очень странные дела	саундтрек - The Grotto	 - Alexandr Bulgarov - Небо видело все - саундтрек	Walt Disney Records - Различные исполнители — Классный мюзикл (Оригинальный саундтрек) [2008]	
+49	ost	4	8.9	саундтрек из фильма титаник	Тема песни мелодии - Титаник	Баргон - Титаник	Starlight Orchestra - My Heart Will Go On (Титаник)	
+50	ost	0	60.1	песни из мультика король лев				timed out
+51	ost	0	60.1	музыка из игры ведьмак				timed out
+52	ost	10	31.0	песня из сериала слово пацана	Тоха, VADO7421 - СЛОВО ПАЦАНА	Сова - Сериал	Vagensta - Слово пацана	
+53	ost	10	9.2	саундтрек интерстеллар	Classical Study Music, Soothing Sounds, Piano for Studying - Interstellar	Imperial Orchestra - Interstellar	Chiara Attanasio, Hans Zimmer - Interstellar	
+54	ost	10	26.0	музыка из сериала игры престолов	Сова - Сериал	Mary Gu - Сломанная игрушка	natta - у любви так много но (OST оригинального сериала Okko "Лихие")	
+55	ost	10	41.0	песня из кино бойцовский клуб	МАВАШИ group - Клуб бойцовский	Финник - Байкерский клуб «Вонючий кабан»	ДЭНДЖИ, ЯмакасиЛи - WHISKEY & COLA	
+56	decade	10	49.1	песни 80-х	 - Record 80-х	 - Авторадио Дискотека 80-х	 - Дискотека 80-х & 90-х	
+57	decade	10	34.9	музыка 90-х годов	 - DFM Дискач 90-х	 - Дискотека 80-х & 90-х	 - ДИСКОТЕКА 90-Х	
+58	decade	10	23.3	хиты 2000-х	 - 93,6 JAM FM Russkiye Khity	Дискотека Авария - Pepsi новогодняя	As des As - Cancan	
+59	decade	0	60.1	зарубежные песни 70-х				timed out
+60	decade	10	36.3	русские песни нулевых	 - European Hit Radio - Russkie Hiti	Funky Animal - I Like To Move It	Big Beat Productions - Hard Rock Drum Loop (100 BPM)	
+61	lang	10	40.8	английские песни	Serene Soundscapes - like that kendrick lamar	Thunderstorms - английские дожди	MEGALIT - Английский алфавит	
+62	lang	10	34.8	французская музыка	Mix - Russian Christian Songs	DJ TONY MIX - Chalino Sanchez mix	anasheed mix - anasheed mix	
+63	lang	10	33.5	японская музыка	Деревянные киты - Японская	LOFI RADIO, Downtempo, Релакс Музыка, Музыка для медитации - Японская флейта Сякухати	Код Нации - Японская народная музыка	
+64	lang	8	45.3	итальянские песни	TIK TOP, ИТАЛЬЯНСКИЕ МЕМЫ, TATAR MAFIA - Бандито Бобрито  ИТАЛЬЯНСКИЕ МЕМЫ	BRAZILIAN MASTER - ИТАЛЬЯНСКИЕ ЖИВОТНЫЕ	Tiktok Remixer, BRAZILIAN MASTER, Тралалеро Тралала - ИТАЛЬЯНСКИЕ МЕМЫ	
+65	lang	1	36.4	испанские хиты	 - 93,6 JAM FM Russkiye Khity			
+66	topic	10	57.2	космическая музыка	Pavvv, DOKU223 - Ambient	New Age Space - Ambient	U108 - Ambient	
+67	topic	10	26.3	музыка для программиста	Любовь Карпенко - Для женщины	Microbro, Музыка для учёбы - Музыка для домашки	Stussy - DLYA MENYA	
+68	topic	10	25.3	песни про лето	Artem PRO Like - Лето	PRO100VLADOS - Лето не прощается	DA. pro - Лето	
+69	topic	10	41.9	любимые песни сорокова	AIMD - Любимые внучки	shadowraze, ushira - любимые шрамы	Даниленко Елена - Любимые внуки	
+70	topic	6	37.0	веселые песни для детей	Детские колыбельные, Музыка для сна младенцев, Музыка для сна малыша, КОЛЫБЕЛЬНЫЕ, Колыбельная музыка для детей и младенцев, Расслабляющая Музыка для Сна - Колыбельные мира: Инструментальные хиты для детей	Детские песни, Детские колыбельные, Музыка для  сна, Колыбельная музыка для детей и младенцев, Детская колыбельная, Музыка для сна младенцев - Колыбельные хиты — музыка для сна ребёнка, расслабляющие мелодии и приятные песни для малышей и младенцев	Группа поющие дети, Песни для детей - Барабулька - весёлые детские треки 2026 - музыка для хорошего настроения	
+71	topic	6	18.2	песни про котов	Maxtones Pro dkk - JIHAN AUDY 2019	Murottal Pro - Surah Al Waqiah Salim Bahanan	New York Pro Musica - Spanish Music Of The Renaissance	
+72	topic	10	48.2	музыка чтобы не скучать в машине	Маша Сладкова - Бодрая	STXPNXY - Машина	Unquote, Cloudleg - Летим	
+73	topic	7	21.3	песни про москву	Музыка про города - Про Москву	Maxtones Pro dkk - JIHAN AUDY 2019	Murottal Pro - Surah Al Waqiah Salim Bahanan	
+74	edge	10	32.8	что-нибудь незнакомое	Соблаков - ЧТО НИБУДЬ	Никита Савельев, Зураб Матуа, Одди Ньюмел - Скажи что-нибудь	Абстрактор, Альянс - Что-нибудь	
+75	edge	10	28.0	порекомендуй что-нибудь новое	Кристалик - Песенка про Кирилла	Airis&Alex - Дружный женский коллектив	Кирилл Барс, Людмила Романова - Ты просто будь со мною рядом	
+76	edge	10	18.2	похожее на баста выпускной	Каспийский Груз, Баста - Доедешь - пиши	FEDUK, Баста, Моя Мишель - Хлопья летят наверх	lightprey - похожи	
+77	edge	10	17.3	баста без слим шейди	Баста - Выпускной (Медлячок)	Thiagão - Só Tua Graça Me Basta (2014) rappratodos.blogspot.com.br - Thiagão - Só Tua Graça Me Basta (2014) rappratodos.blogspot.com.br	Dirty Red & Tha Basta - Dirty Red & Tha Basta (Lil Bay) - Trying To Get In	
+78	edge	10	34.3	три песни группы кино	КИНО - Группа крови	КИНО - Звезда по имени Солнце	Mike's Kino World - MIKE's FAV Country Songs.......	
+79	edge	10	46.3	самая популярная песня в мире	Сергей Трофимов - Город Сочи	Ramina Star - Я популярная	SIANITE - Популярная	
+80	edge	10	44.9	музыка как вчера играла	DJ Блокnote - Я пришел к тебе с приветом	TATYANA Isaeva, klimental - Завтра как вчера	feleex - Как вчера	
+81	edge	10	56.5	просто включи музыку	rey1gun, Ma use - просто	Nottoys - Я просто зашёл поиграть	снова Ева - ССОРИМСЯ, ЧТОБЫ МИРИТЬСЯ	
+82	edge	0	16.8	последний хит оливии родриго				
+83	edge	10	26.1	русский аналог тейлор свифт	Jackie-O - Soda Pop	Harry Styles - Pop	prodbycpkshawn - Pop like this Pt. 2	
+84	voice	10	26.4	включи музыку из сериала игра престолов	Сова - Сериал	Студия «Феникс» - 13 Карт — Заставка сериала	Mary Gu - Сломанная игрушка	
+85	voice	0	17.8	найди песню где поют хей ю				
+86	voice	10	33.7	поставь что-нибудь бодрое	DJ Antoha, Энергичная музыка - Бодрая утренняя энергичная музыка	Маша Сладкова - Бодрая	Бодо Бородо - Бодрядка	
+87	voice	10	18.7	хочу послушать джаз	Tellman - Jazz	Джаз, Smooth Jazz, Музыка для ресторанов - Популярный джаз	Xcho - Джаз	
+88	voice	10	25.5	дай подборку рока	KAZIOL - Rock Your Body	Gordon - Rock That Body	Moura Dj, Dj Aimi, DJ Modder, MC VK DA VS - ROCK	
+89	voice	10	25.1	включи песню кукла колдуна	Сказки колдуна - Куклы	CAGMO - Кукла колдуна	LERA - Кукла колдуна	
+90	voice	0	4.1	что посоветуешь из новинок				
+91	voice	2	4.6	продолжи в том же духе	GROS, Яшка - В том же духе	Skorpion - Продолжай в том же духе		
+92	voice	10	58.8	песня с припевом на английском	Научно-технический рэп, Вадик Погорельский - Припев куплет припев	FEDUK, OG Buda - Девочка На Трапе	MIGAS - Конфетка	
+93	edge	10	5.4	зомби	Серега Пират, qeqoqeq - Зомби апокалипсис	Adamlar - Zombi	POLI - Зомби	

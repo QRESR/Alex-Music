@@ -1,0 +1,1595 @@
+[
+ {
+  "i": 1,
+  "cat": "artist",
+  "q": "Баста",
+  "n": 3,
+  "dt": 4.9,
+  "intent": "play",
+  "say": "Нашла 3 трека. Включаю первый.",
+  "top": [
+   "Баста - Выпускной (Медлячок)",
+   "BASTA! - Basta",
+   "Баста, Моя Мишель - Если я буду танцевать"
+  ],
+  "artist_hit": true,
+  "err": null
+ },
+ {
+  "i": 2,
+  "cat": "artist",
+  "q": "эминем",
+  "n": 10,
+  "dt": 4.4,
+  "intent": "play",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Eminem - Houdini",
+   "Eminem, Dido - Stan",
+   "Eminem - Mockingbird",
+   "Eminem, Rihanna - Love The Way You Lie",
+   "Eminem - Without Me"
+  ],
+  "artist_hit": false,
+  "err": null
+ },
+ {
+  "i": 3,
+  "cat": "artist",
+  "q": "Kate Bush",
+  "n": 8,
+  "dt": 5.2,
+  "intent": "play",
+  "say": "Нашла 8 треков. Включаю первый.",
+  "top": [
+   "Kate Bush - Army Dreamers",
+   "Kate Bush - Babooshka",
+   "Kate Bush - Wuthering Heights",
+   "Kate Mosh - Cloudbusting",
+   "Kate Project - Hot N Cold"
+  ],
+  "artist_hit": true,
+  "err": null
+ },
+ {
+  "i": 4,
+  "cat": "artist",
+  "q": "the cranberries zombie",
+  "n": 10,
+  "dt": 5.8,
+  "intent": "play",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "The Cranberries - Zombie",
+   "The Cranberries, uSpeed - Zombie",
+   "The Cranberries, Iain Cook - Zombie",
+   "The Cranberries, Andy Hughes, The Orb, Alex Paterson - Zombie",
+   "The Cranberries, Stephen Street - Wanted"
+  ],
+  "artist_hit": false,
+  "err": null
+ },
+ {
+  "i": 5,
+  "cat": "artist",
+  "q": "Linkin Park",
+  "n": 10,
+  "dt": 4.9,
+  "intent": "play",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Linkin Park - Numb",
+   "Linkin Park - In the End",
+   "Linkin Park - Faint",
+   "Jay-Z, Linkin Park - Numb / Encore",
+   "Linkin Park - From the Inside"
+  ],
+  "artist_hit": true,
+  "err": null
+ },
+ {
+  "i": 6,
+  "cat": "artist",
+  "q": "Мумий Тролль",
+  "n": 10,
+  "dt": 4.5,
+  "intent": "play",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Мумий Тролль - Мумий Тролль версия",
+   "Мумий Тролль, Schier - Jimolost",
+   "Мумий Тролль - Владивосток 2000",
+   "Мумий Тролль - Моя певица",
+   "Мумий Тролль, Kito Jempere Band, Kito Jempere - Jimolost"
+  ],
+  "artist_hit": true,
+  "err": null
+ },
+ {
+  "i": 7,
+  "cat": "artist",
+  "q": "Сплин",
+  "n": 10,
+  "dt": 4.8,
+  "intent": "play",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Сплин - Орбит без сахара",
+   "Сплин - Выхода нет",
+   "Непоэт - Сплин",
+   "ATL - Сплин",
+   "Murovei, Pastor Napas - Сплин"
+  ],
+  "artist_hit": true,
+  "err": null
+ },
+ {
+  "i": 8,
+  "cat": "artist",
+  "q": "Radiohead",
+  "n": 10,
+  "dt": 19.6,
+  "intent": "playlist",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Chris L., Radiohead - Radiohead - Karma Police (Hybrid Mix)",
+   "Radiohead - Creep",
+   "Radiohead - Street Spirit",
+   "Radiohead - Creep",
+   "Radiohead - Untitled"
+  ],
+  "artist_hit": true,
+  "err": null
+ },
+ {
+  "i": 9,
+  "cat": "artist",
+  "q": "Кино группа",
+  "n": 10,
+  "dt": 4.2,
+  "intent": "play",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "КИНО - Группа крови",
+   "Кино Фильм - Группа крови",
+   "КИНО - Фильмы",
+   "КИНО - Песня без слов",
+   "КИНО - Звезда по имени Солнце"
+  ],
+  "artist_hit": false,
+  "err": null
+ },
+ {
+  "i": 10,
+  "cat": "artist",
+  "q": "Нервы",
+  "n": 10,
+  "dt": 4.7,
+  "intent": "play",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Нервы - Нервы",
+   "SHAQINA - Действуешь на нервы",
+   "StaFFорд63, НЕ.KURILI - Нервы",
+   "The Chemodan, Восточный округ - Нервы",
+   "К0да - Нервы"
+  ],
+  "artist_hit": true,
+  "err": null
+ },
+ {
+  "i": 11,
+  "cat": "artist",
+  "q": "remake souls",
+  "n": 2,
+  "dt": 4.4,
+  "intent": "play",
+  "say": "Нашла 2 трека. Включаю первый.",
+  "top": [
+   "Kaya Project, Pooja Tiwari, Globular - Souls Entwined",
+   "Remade - Old Souls"
+  ],
+  "artist_hit": false,
+  "err": null
+ },
+ {
+  "i": 12,
+  "cat": "artist",
+  "q": "даша астафьева",
+  "n": 10,
+  "dt": 5.6,
+  "intent": "play",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Даша Астафьева - Управляй мной",
+   "MavLaris - Даша",
+   "Basimov - Даша",
+   "M-Kay - Даша",
+   "DARIA GORDOVA - Dasha"
+  ],
+  "artist_hit": true,
+  "err": null
+ },
+ {
+  "i": 13,
+  "cat": "track",
+  "q": "катя буш running up that hill",
+  "n": 9,
+  "dt": 6.0,
+  "intent": "play",
+  "say": "Нашла 9 треков. Включаю первый.",
+  "top": [
+   "Placebo, Kate Bush - Running Up That Hill",
+   "Kate Bush, Orkidea - Running Up That Hill (FSOE 541)",
+   "Kate Bush - Running Up That Hill (A Deal With God) - Live On Wogan Show 1985",
+   "Kate Bush, David Gilmour - Running Up the Hill (A Deal With God)",
+   "Aarne, BUSHIDO ZHO - SOS"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 14,
+  "cat": "track",
+  "q": "случайная любовь текст",
+  "n": 0,
+  "dt": 4.1,
+  "intent": "play",
+  "say": "Ничего не нашла, попробуй иначе.",
+  "top": [],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 15,
+  "cat": "track",
+  "q": "выпускной баста",
+  "n": 10,
+  "dt": 4.2,
+  "intent": "play",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Баста - Выпускной (Медлячок)",
+   "Баста - Выпускной",
+   "Баста - Я найду тебя через века",
+   "Баста, Диана Арбенина, Александр Ф. Скляр, Сергей Бобунец, SunSay, Скриптонит - Сансара",
+   "Баста, Большой симфонический оркестр Санкт-Петербурга - Вступление"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 16,
+  "cat": "track",
+  "q": "stan eminem",
+  "n": 10,
+  "dt": 4.2,
+  "intent": "play",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Eminem - Stan",
+   "Eminem, Dido - Stan",
+   "Various Artists - Eminem Tribute - Stan",
+   "Eminem, Elton John - Stan",
+   "Boogaloo To Eminem - Stan"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 17,
+  "cat": "track",
+  "q": "грустная песня про проводы",
+  "n": 10,
+  "dt": 49.9,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "XOLIDAYBOY - ГРУСТНАЯ И КРАСИВАЯ",
+   "egorka123 - грустн",
+   "dudemade! - блеод тайп грустн",
+   "Влад Полянский - Грустная",
+   "madk1d - грустная история"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 18,
+  "cat": "track",
+  "q": "shape of you",
+  "n": 10,
+  "dt": 4.5,
+  "intent": "play",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Jamie Cullum - Shape Of You",
+   "Acko, Wontu, Paul Hawksworth - Shape Of You",
+   "No Resolve - Shape of You",
+   "Lost Culturé, CPX, Elise Lieberth - Shape Of You",
+   "Pavel Arthas, xxxmanera - You"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 19,
+  "cat": "track",
+  "q": "blinding lights",
+  "n": 10,
+  "dt": 4.5,
+  "intent": "play",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Loi - Blinding Lights",
+   "The Weeknd - Blinding Lights",
+   "Saint Asonia - Blinding Lights",
+   "Jump Singers - Blinding Lights",
+   "Ellie Goulding, Speed Radio - Lights"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 20,
+  "cat": "track",
+  "q": "где же ты была",
+  "n": 8,
+  "dt": 4.2,
+  "intent": "play",
+  "say": "Нашла 8 треков. Включаю первый.",
+  "top": [
+   "Елена Карпук - Где же ты была",
+   "ЗоХа - Где же ты была",
+   "Guru-AI - Где же ты была",
+   "Игорь Наджиев - Где же ты была?",
+   "Лев Лещенко - Где же ты была"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 21,
+  "cat": "track",
+  "q": "восьмиклассница ваганова",
+  "n": 10,
+  "dt": 5.4,
+  "intent": "play",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Три желания - Восьмиклассница",
+   "GSPD - Восьмиклассница",
+   "КИНО - Восьмиклассница",
+   "Виктор Цой - Восьмиклассница",
+   "Кто такой - Восьмиклассница"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 22,
+  "cat": "track",
+  "q": "ты же помнишь текст песни",
+  "n": 10,
+  "dt": 28.0,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Dzewan - Текст",
+   "pisoso - Забыл текст",
+   "Hell.DowN, Rewas - Нахуй текст",
+   "Bar Yahman, Hard Bass School - Sample Text",
+   "Книга в кадре - Короткий текст"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 23,
+  "cat": "track",
+  "q": "малыш мой кристалла",
+  "n": 1,
+  "dt": 4.4,
+  "intent": "play",
+  "say": "Нашла 1 трек. Включаю первый.",
+  "top": [
+   "Bal Tazara - Грани кристалла"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 24,
+  "cat": "track",
+  "q": "тает лёд грибы",
+  "n": 1,
+  "dt": 5.3,
+  "intent": "play",
+  "say": "Нашла 1 трек. Включаю первый.",
+  "top": [
+   "Грибы, Sимптом - Тает лёд"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 25,
+  "cat": "genre",
+  "q": "рэп подборка",
+  "n": 10,
+  "dt": 30.0,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "LACAZETTE - RAP",
+   "Comeback Frapper Smith - Rap",
+   "ERIKMASTER - ITALIAN BRAINROT RAP",
+   "Yuno Miles - Fast Rap",
+   "GGSOUNDS, holyAngel - Rap"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 26,
+  "cat": "genre",
+  "q": "электронная музыка",
+  "n": 10,
+  "dt": 3.6,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Хитовый чел, Лучшие песни - Энергия Ночи – Электронная музыка свежие альбомы",
+   "Хаме-леоН - Электронная",
+   "Хитовый чел, Вечеринка - Без остановки сердца – Нью-диско танцевальная электронная музыка летние хиты",
+   "DobryDyadka - Электронная",
+   "Хитовый чел, Deep House - Потерянный сигнал – Популярные клубные хиты электронная музыка новинки"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 27,
+  "cat": "genre",
+  "q": "рок 90-х",
+  "n": 10,
+  "dt": 32.9,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Queen - We Will Rock You",
+   "Пилот - Рок",
+   "Алиса - Рок",
+   "ИГРА МИРОВ - Рок",
+   "rok - rok"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 28,
+  "cat": "genre",
+  "q": "русский рок",
+  "n": 10,
+  "dt": 18.7,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Нанта - Русский Рок",
+   "РА - Русский рок",
+   "Парадарайя - Русский рок",
+   "каракуль - русский рок",
+   "Gordon - Rock That Body"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 29,
+  "cat": "genre",
+  "q": "джаз расслабленный",
+  "n": 10,
+  "dt": 18.7,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Tellman - Jazz",
+   "Xcho - Джаз",
+   "byekid - Jazz",
+   "VROUBIESS VOLUME - JAZZ",
+   "MIXEEV, KR17, Valerionezko, @fuckliie - JAZZ"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 30,
+  "cat": "genre",
+  "q": "классическая музыка для работы",
+  "n": 10,
+  "dt": 45.8,
+  "intent": "playlist",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Инструментальная, Классическая музыка 1 час - Спокойная музыка для работы",
+   "Инструментальная, Пианино музыка, Chillout Lounge Piano, Классическая - Красивая музыка на пианино для дома работы и покоя",
+   "Инструментальная, Классическая, Спокойная инструментальная музыка, Красивая музыка без слов - Светлая Дорога Через Тишину. Инструментальная Музыка Для Отдыха, Работы, Чтения, Учёбы, Вдохновения, Фона И Спокойных Вечеров С Красивым Звучанием И Мягкой Атмосферой Каждый День",
+   "Инструментальная, Классическая, Спокойная инструментальная музыка, Красивая музыка без слов - Последняя Мелодия Перед Ночью. Инструментальная Музыка Для Отдыха, Работы, Чтения, Учёбы, Вдохновения, Фона И Спокойных Вечеров С Мягким Звучанием И Тихой Атмосферой До Темноты",
+   "Violin Music, Classical Study Music, Классическая музыка для детей, Бесконечное спокойствие - Легкий Инструментальный Вальс"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 31,
+  "cat": "genre",
+  "q": "хип хоп 2000-х",
+  "n": 10,
+  "dt": 19.1,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Radio FREE Crocketts - KHIP Hollister",
+   " - KHIP Airchecks",
+   "Robert Zerwekh - KHIP 93.5 Hollister, CA 12 October 1985",
+   "TV.RADIO530 - KHIP 104.3 The Hippo Aircheck 7-6-26",
+   " - Radio FREE Crocketts"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 32,
+  "cat": "genre",
+  "q": "инди поп",
+  "n": 10,
+  "dt": 26.7,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "BLXCKBUSTA - JAY VOO",
+   "RAFA MOON - INDI",
+   "Duet Gold Star - Sphere of Dance",
+   "ILLiam, Mickey Dubbs - Indy",
+   "я пошутил - Инди"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 33,
+  "cat": "genre",
+  "q": "метал тяжелый",
+  "n": 10,
+  "dt": 53.3,
+  "intent": "playlist",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Heavy Metal - Metal",
+   "MrClaps - This Heavy Metal",
+   "Alec Koff - At Heavy Metal",
+   "Ill Bill, Jedi Mind Tricks - Heavy Metal Kings",
+   "Ethernal - Heavy Metal"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 34,
+  "cat": "genre",
+  "q": "кантри",
+  "n": 10,
+  "dt": 26.8,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "IL'HAN - Country",
+   "Дикарь - В ритме спорта",
+   "Дикий запад - Кантри",
+   "Ваганыч - Кантри",
+   "Llondon actress - country"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 35,
+  "cat": "mood",
+  "q": "спокойная расслабляющая музыка",
+  "n": 10,
+  "dt": 18.7,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Музыка для работы и фона, Природа, Relaxing music, Фоновая музыка, РЕЛАКС, Романтическая музыка - Романтическая музыка для медленного танца",
+   "DK_FF - Френдзона",
+   "PLUWG - Для себя",
+   "Vokalistik - Не беспокойся за меня",
+   "Narvent, Luneex - Calm Night"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 36,
+  "cat": "mood",
+  "q": "бодрая музыка в дорогу",
+  "n": 10,
+  "dt": 34.7,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Маша Сладкова - Бодрая",
+   "Маргарита Малкина - Новогодняя песня",
+   "Anorsel - Едем к деду!",
+   "ТТа самая Bullet, Сантила - Бодрая",
+   "БаюБай - Пузико"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 37,
+  "cat": "mood",
+  "q": "грустная музыка под дождь",
+  "n": 10,
+  "dt": 27.3,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Аниматор - Верити",
+   "Стас Михайлов - Лучшая на свете",
+   "XOLIDAYBOY - ГРУСТНАЯ И КРАСИВАЯ",
+   "egorka123 - грустн",
+   "dudemade! - блеод тайп грустн"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 38,
+  "cat": "mood",
+  "q": "романтическая музыка для ужина",
+  "n": 9,
+  "dt": 47.2,
+  "intent": "playlist",
+  "say": "Нашла 9 треков. Включаю первый.",
+  "top": [
+   "Vond Ace, Романтическая музыка - Романтическая музыка для предложения руки и сердца. vol 3",
+   "romanticLove, Романтическая музыка - Спокойная романтическая музыка",
+   "romanticLove, Романтическая музыка - Романтическая инструментальная музыка",
+   "Романтическая музыка, Грустные песни, Union of Sound, Красивая музыка - Прощальная мелодия без слов",
+   "Автоспорт - Романтическая"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 39,
+  "cat": "mood",
+  "q": "энергичная музыка для тренировки",
+  "n": 3,
+  "dt": 46.4,
+  "intent": "playlist",
+  "say": "Нашла 3 трека. Включаю первый.",
+  "top": [
+   "Тренировка и Спорт. Фитнес и Бег, РЕЛАКС, Танцевальная клубная музыка, Русский клубняк, Энергичная Весёлая Музыка, Современная Танцевальная Музыка - Лучшая музыка для спорта",
+   "culb33i, Энергичная Весёлая Музыка - Энергичная музыка без слов",
+   "Музыка для спорта, Энергичная Весёлая Музыка, Русский техно рейв 90 х, Русские Хиты, Красивая фоновая Музыка, Deep House - Спортивный трек"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 40,
+  "cat": "mood",
+  "q": "меланхоличная музыка вечером",
+  "n": 0,
+  "dt": 60.1,
+  "err": "timed out",
+  "top": [],
+  "artist_hit": null
+ },
+ {
+  "i": 41,
+  "cat": "mood",
+  "q": "танцевальная музыка на вечеринку",
+  "n": 10,
+  "dt": 25.2,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Slayyyter - DANCE...",
+   "Fall Out Boy - Dance, Dance",
+   "SH3TLVIZ - Dance",
+   "Xcho - Dance",
+   "RomancePlanet - DANCE"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 42,
+  "cat": "mood",
+  "q": "тихая музыка для сна",
+  "n": 10,
+  "dt": 50.5,
+  "intent": "playlist",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Медитативная музыка, Восстановление сил, Расслабляющая Музыка для Сна, Deep Sleep Music Experience, Оазис Глубокой Сна - Тихая Ночь. Музыка для Спокойного Отдыха",
+   "sleepmylove, Для сна - Тихая музыка для сна",
+   "sleepmylove, Для сна - Тихая расслабляющая музыка для ночного сна",
+   "sleepmylove, Расслабляющая Музыка для Сна - Тихая расслабляющая музыка для сна и релакса",
+   "Расслабляющая Музыка для Сна, Спокойная фоновая музыка, Музыка для релаксации, Музыка для медитации, Музыка для снятия стресса, Расслабляющая медицина - Тихая колыбельная для сна"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 43,
+  "cat": "season",
+  "q": "новогодняя музыка",
+  "n": 10,
+  "dt": 36.9,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Дилижанс - Новогодняя",
+   "Алёна.exe - Новогодняя",
+   "DjAl333 - Новогодняя",
+   "Ляма - Новогодняя",
+   "uniqe, nkeeei, ARTEM SHILOVETS, Voskresenskii, Wipo, AQYLA - Новогодняя"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 44,
+  "cat": "season",
+  "q": "песни про зиму",
+  "n": 6,
+  "dt": 37.0,
+  "intent": "playlist",
+  "say": "Нашла 6 треков. Включаю первый.",
+  "top": [
+   "Maxtones Pro dkk - JIHAN AUDY 2019",
+   "Murottal Pro - Surah Al Waqiah Salim Bahanan",
+   "New York Pro Musica - Spanish Music Of The Renaissance",
+   "Pro Arte String Quartet - HAYDN: String Quartets",
+   "Murottal Pro - Surat Ar Rahman Salim Bahanan"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 45,
+  "cat": "season",
+  "q": "музыка на 8 марта",
+  "n": 10,
+  "dt": 54.0,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   " - fuego stereo 101.9 santa marta",
+   " - Balai Budaya Minomartani FM ",
+   "Волшебные поздравления - Прикольное поздравление с 8 марта",
+   "Волшебные поздравления - Поздравление учителей с 8 марта",
+   "Татьяна Черникова - 8 марта праздник дам!"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 46,
+  "cat": "season",
+  "q": "майская песня",
+  "n": 10,
+  "dt": 57.0,
+  "intent": "playlist",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "OLYA MAYSKAYA - Милый",
+   "OLYA MAYSKAYA - Воспоминания",
+   "OLYA MAYSKAYA - Вера",
+   "MAYSKAYA, одинвосьмой - Зачем",
+   "MAYSKAYA - ТАРО"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 47,
+  "cat": "season",
+  "q": "шум моря музыка",
+  "n": 3,
+  "dt": 30.6,
+  "intent": "playlist",
+  "say": "Нашла 3 трека. Включаю первый.",
+  "top": [
+   "ШУМ ДЛЯ СНА - Коричневый шум",
+   "Nature Sound Series, Deep Sleep, Шум моря и Звук океана, Звук Моря - Настоящий успокаивающий подводный эмбиент",
+   "Шум Моря Коллекция - Эмбиент"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 48,
+  "cat": "ost",
+  "q": "музыка из сериала очень странные дела",
+  "n": 10,
+  "dt": 19.6,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "саундтрек - The Grotto",
+   " - Alexandr Bulgarov - Небо видело все - саундтрек",
+   "Walt Disney Records - Различные исполнители — Классный мюзикл (Оригинальный саундтрек) [2008]",
+   "WWW. Records - Официальный саундтрек к фильму \"Ночной Дозор\"",
+   "Александр Пономарёв - Александр Пономарёв (Скворушка) - Главная Тема Шоу ПЕСНИ (Официальный Саундтрек)"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 49,
+  "cat": "ost",
+  "q": "саундтрек из фильма титаник",
+  "n": 4,
+  "dt": 8.9,
+  "intent": "play",
+  "say": "Нашла 4 трека. Включаю первый.",
+  "top": [
+   "Тема песни мелодии - Титаник",
+   "Баргон - Титаник",
+   "Starlight Orchestra - My Heart Will Go On (Титаник)",
+   "5RACKS - Титаник"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 50,
+  "cat": "ost",
+  "q": "песни из мультика король лев",
+  "n": 0,
+  "dt": 60.1,
+  "err": "timed out",
+  "top": [],
+  "artist_hit": null
+ },
+ {
+  "i": 51,
+  "cat": "ost",
+  "q": "музыка из игры ведьмак",
+  "n": 0,
+  "dt": 60.1,
+  "err": "timed out",
+  "top": [],
+  "artist_hit": null
+ },
+ {
+  "i": 52,
+  "cat": "ost",
+  "q": "песня из сериала слово пацана",
+  "n": 10,
+  "dt": 31.0,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Тоха, VADO7421 - СЛОВО ПАЦАНА",
+   "Сова - Сериал",
+   "Vagensta - Слово пацана",
+   "Mary Gu - Сломанная игрушка",
+   "natta - у любви так много но (OST оригинального сериала Okko \"Лихие\")"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 53,
+  "cat": "ost",
+  "q": "саундтрек интерстеллар",
+  "n": 10,
+  "dt": 9.2,
+  "intent": "play",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Classical Study Music, Soothing Sounds, Piano for Studying - Interstellar",
+   "Imperial Orchestra - Interstellar",
+   "Chiara Attanasio, Hans Zimmer - Interstellar",
+   "Deep Sleep Music Experience, Deep Sleep Meditation, Medicina Relaxante - Interstellar",
+   "Calm Music For Studying, Study Music & Sounds, Música para Leer - Interstellar"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 54,
+  "cat": "ost",
+  "q": "музыка из сериала игры престолов",
+  "n": 10,
+  "dt": 26.0,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Сова - Сериал",
+   "Mary Gu - Сломанная игрушка",
+   "natta - у любви так много но (OST оригинального сериала Okko \"Лихие\")",
+   "Комбинация - Russian Girls",
+   "Студия «Феникс» - 13 Карт — Заставка сериала"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 55,
+  "cat": "ost",
+  "q": "песня из кино бойцовский клуб",
+  "n": 10,
+  "dt": 41.0,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "МАВАШИ group - Клуб бойцовский",
+   "Финник - Байкерский клуб «Вонючий кабан»",
+   "ДЭНДЖИ, ЯмакасиЛи - WHISKEY & COLA",
+   "Дорога На Запад - Полуденная дуэль (Ковбойский Саундтрек, Вестерн Инструментал)",
+   "Spa Music - Goblin OST"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 56,
+  "cat": "decade",
+  "q": "песни 80-х",
+  "n": 10,
+  "dt": 49.1,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   " - Record 80-х",
+   " - Авторадио Дискотека 80-х",
+   " - Дискотека 80-х & 90-х",
+   " - Радио Рекорд 80-х",
+   "DEVO - Whip It"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 57,
+  "cat": "decade",
+  "q": "музыка 90-х годов",
+  "n": 10,
+  "dt": 34.9,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   " - DFM Дискач 90-х",
+   " - Дискотека 80-х & 90-х",
+   " - ДИСКОТЕКА 90-Х",
+   " - Радио Рекорд Супердискотека 90-х",
+   " - Россия 90-х"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 58,
+  "cat": "decade",
+  "q": "хиты 2000-х",
+  "n": 10,
+  "dt": 23.3,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   " - 93,6 JAM FM Russkiye Khity",
+   "Дискотека Авария - Pepsi новогодняя",
+   "As des As - Cancan",
+   "firstclasslikealways - The Minecraft Spider",
+   "MINUSUSHI - Majestic"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 59,
+  "cat": "decade",
+  "q": "зарубежные песни 70-х",
+  "n": 0,
+  "dt": 60.1,
+  "err": "timed out",
+  "top": [],
+  "artist_hit": null
+ },
+ {
+  "i": 60,
+  "cat": "decade",
+  "q": "русские песни нулевых",
+  "n": 10,
+  "dt": 36.3,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   " - European Hit Radio - Russkie Hiti",
+   "Funky Animal - I Like To Move It",
+   "Big Beat Productions - Hard Rock Drum Loop (100 BPM)",
+   "Женя Лесникова - Хорошая девочка",
+   "DJ ЛИ ЮЭ - Как дела? Нормал? Ну пон"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 61,
+  "cat": "lang",
+  "q": "английские песни",
+  "n": 10,
+  "dt": 40.8,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Serene Soundscapes - like that kendrick lamar",
+   "Thunderstorms - английские дожди",
+   "MEGALIT - Английский алфавит",
+   "DJ Talent - English Alphabet",
+   "ASMR Rain Sounds - английские дожди"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 62,
+  "cat": "lang",
+  "q": "французская музыка",
+  "n": 10,
+  "dt": 34.8,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Mix - Russian Christian Songs",
+   "DJ TONY MIX - Chalino Sanchez mix",
+   "anasheed mix - anasheed mix",
+   "Sonnydeejay - Vocal Trance 190 Bonus Mix - Sonnydeejay - Vocal Trance 190 Bonus Mix",
+   "Mix by Jaguar - Oldies But Goodies - CD.11"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 63,
+  "cat": "lang",
+  "q": "японская музыка",
+  "n": 10,
+  "dt": 33.5,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Деревянные киты - Японская",
+   "LOFI RADIO, Downtempo, Релакс Музыка, Музыка для медитации - Японская флейта Сякухати",
+   "Код Нации - Японская народная музыка",
+   "Enisey Music - Японская энка",
+   "Nightheart - японская школа"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 64,
+  "cat": "lang",
+  "q": "итальянские песни",
+  "n": 8,
+  "dt": 45.3,
+  "intent": "playlist",
+  "say": "Нашла 8 треков. Включаю первый.",
+  "top": [
+   "TIK TOP, ИТАЛЬЯНСКИЕ МЕМЫ, TATAR MAFIA - Бандито Бобрито  ИТАЛЬЯНСКИЕ МЕМЫ",
+   "BRAZILIAN MASTER - ИТАЛЬЯНСКИЕ ЖИВОТНЫЕ",
+   "Tiktok Remixer, BRAZILIAN MASTER, Тралалеро Тралала - ИТАЛЬЯНСКИЕ МЕМЫ",
+   "MINI - Итальянские мемы",
+   "BRAZILIAN MASTER, Tiktok Remixer, PHONK GROOVE - ИТАЛЬЯНСКИЕ ЖИВОТНЫЕ"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 65,
+  "cat": "lang",
+  "q": "испанские хиты",
+  "n": 1,
+  "dt": 36.4,
+  "intent": "playlist",
+  "say": "Собрала подборку: 1 трек.",
+  "top": [
+   " - 93,6 JAM FM Russkiye Khity"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 66,
+  "cat": "topic",
+  "q": "космическая музыка",
+  "n": 10,
+  "dt": 57.2,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Pavvv, DOKU223 - Ambient",
+   "New Age Space - Ambient",
+   "U108 - Ambient",
+   "stillnull - ta4to - ambient",
+   "Ambient - Space Buttons"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 67,
+  "cat": "topic",
+  "q": "музыка для программиста",
+  "n": 10,
+  "dt": 26.3,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Любовь Карпенко - Для женщины",
+   "Microbro, Музыка для учёбы - Музыка для домашки",
+   "Stussy - DLYA MENYA",
+   "Teraydu - Lofi",
+   "wertess - lofi"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 68,
+  "cat": "topic",
+  "q": "песни про лето",
+  "n": 10,
+  "dt": 25.3,
+  "intent": "playlist",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Artem PRO Like - Лето",
+   "PRO100VLADOS - Лето не прощается",
+   "DA. pro - Лето",
+   "TREWL Pro MAX - Лето",
+   "АТАКАМА.pro - Лето в Сочи"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 69,
+  "cat": "topic",
+  "q": "любимые песни сорокова",
+  "n": 10,
+  "dt": 41.9,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "AIMD - Любимые внучки",
+   "shadowraze, ushira - любимые шрамы",
+   "Даниленко Елена - Любимые внуки",
+   "Алексей Майер, Татьяна Буланова - Любимые глаза",
+   "seel bp - Любимые бросают, любимые врут!"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 70,
+  "cat": "topic",
+  "q": "веселые песни для детей",
+  "n": 6,
+  "dt": 37.0,
+  "intent": "playlist",
+  "say": "Нашла 6 треков. Включаю первый.",
+  "top": [
+   "Детские колыбельные, Музыка для сна младенцев, Музыка для сна малыша, КОЛЫБЕЛЬНЫЕ, Колыбельная музыка для детей и младенцев, Расслабляющая Музыка для Сна - Колыбельные мира: Инструментальные хиты для детей",
+   "Детские песни, Детские колыбельные, Музыка для  сна, Колыбельная музыка для детей и младенцев, Детская колыбельная, Музыка для сна младенцев - Колыбельные хиты — музыка для сна ребёнка, расслабляющие мелодии и приятные песни для малышей и младенцев",
+   "Группа поющие дети, Песни для детей - Барабулька - весёлые детские треки 2026 - музыка для хорошего настроения",
+   "Музыка для беременных, Детские колыбельные, Музыка для сна младенцев, КОЛЫБЕЛЬНЫЕ, Колыбельная музыка для детей и младенцев, Музыка для сна малыша - Спокойствие мамы: Инструментальные хиты для беременных",
+   "ВОЛШЕБНАЯ БОЧКА, Ансамбль Детские Песни, Детское издательство «Елена», Детские песни, Александра и детские песни, Классическая музыка для детей - Весёлые мелодии"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 71,
+  "cat": "topic",
+  "q": "песни про котов",
+  "n": 6,
+  "dt": 18.2,
+  "intent": "playlist",
+  "say": "Нашла 6 треков. Включаю первый.",
+  "top": [
+   "Maxtones Pro dkk - JIHAN AUDY 2019",
+   "Murottal Pro - Surah Al Waqiah Salim Bahanan",
+   "New York Pro Musica - Spanish Music Of The Renaissance",
+   "Pro Arte String Quartet - HAYDN: String Quartets",
+   "Murottal Pro - Surat Ar Rahman Salim Bahanan"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 72,
+  "cat": "topic",
+  "q": "музыка чтобы не скучать в машине",
+  "n": 10,
+  "dt": 48.2,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Маша Сладкова - Бодрая",
+   "STXPNXY - Машина",
+   "Unquote, Cloudleg - Летим",
+   "28$UTOK - БОДРЫЙ",
+   "Бодо Бородо - Бодрядка"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 73,
+  "cat": "topic",
+  "q": "песни про москву",
+  "n": 7,
+  "dt": 21.3,
+  "intent": "playlist",
+  "say": "Нашла 7 треков. Включаю первый.",
+  "top": [
+   "Музыка про города - Про Москву",
+   "Maxtones Pro dkk - JIHAN AUDY 2019",
+   "Murottal Pro - Surah Al Waqiah Salim Bahanan",
+   "New York Pro Musica - Spanish Music Of The Renaissance",
+   "Pro Arte String Quartet - HAYDN: String Quartets"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 74,
+  "cat": "edge",
+  "q": "что-нибудь незнакомое",
+  "n": 10,
+  "dt": 32.8,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Соблаков - ЧТО НИБУДЬ",
+   "Никита Савельев, Зураб Матуа, Одди Ньюмел - Скажи что-нибудь",
+   "Абстрактор, Альянс - Что-нибудь",
+   "МУЗНОМЕР - ЧТО-НИБУДЬ НОРМАЛЬНОЕ",
+   "kroxiik - Что-нибудь другое"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 75,
+  "cat": "edge",
+  "q": "порекомендуй что-нибудь новое",
+  "n": 10,
+  "dt": 28.0,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Кристалик - Песенка про Кирилла",
+   "Airis&Alex - Дружный женский коллектив",
+   "Кирилл Барс, Людмила Романова - Ты просто будь со мною рядом",
+   "Kim Koi - Novaya",
+   "JF Voice - Новая МАНИЯ"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 76,
+  "cat": "edge",
+  "q": "похожее на баста выпускной",
+  "n": 10,
+  "dt": 18.2,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Каспийский Груз, Баста - Доедешь - пиши",
+   "FEDUK, Баста, Моя Мишель - Хлопья летят наверх",
+   "lightprey - похожи",
+   "Big Weight - похожи...",
+   "Никита Шульгин, Мария Денисова - Мурашки"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 77,
+  "cat": "edge",
+  "q": "баста без слим шейди",
+  "n": 10,
+  "dt": 17.3,
+  "intent": "play",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Баста - Выпускной (Медлячок)",
+   "Thiagão - Só Tua Graça Me Basta (2014) rappratodos.blogspot.com.br - Thiagão - Só Tua Graça Me Basta (2014) rappratodos.blogspot.com.br",
+   "Dirty Red & Tha Basta - Dirty Red & Tha Basta (Lil Bay) - Trying To Get In",
+   "TR3F - De Sofrimento Basta Meu Passado (2007) rappratodos.blogspot.com.br - TR3F - De Sofrimento Basta Meu Passado (2007) rappratodos.blogspot.com.br",
+   "Баста, Моя Мишель - Если я буду танцевать"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 78,
+  "cat": "edge",
+  "q": "три песни группы кино",
+  "n": 10,
+  "dt": 34.3,
+  "intent": "playlist",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "КИНО - Группа крови",
+   "КИНО - Звезда по имени Солнце",
+   "Mike's Kino World - MIKE's FAV Country Songs.......",
+   "Mike's Kino World - Mike's Pop Hit's",
+   "MIKE'S KINO PAGE - The Monarch of Music"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 79,
+  "cat": "edge",
+  "q": "самая популярная песня в мире",
+  "n": 10,
+  "dt": 46.3,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Сергей Трофимов - Город Сочи",
+   "Ramina Star - Я популярная",
+   "SIANITE - Популярная",
+   "Tem - Популярная",
+   "яMaha - Популярная"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 80,
+  "cat": "edge",
+  "q": "музыка как вчера играла",
+  "n": 10,
+  "dt": 44.9,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "DJ Блокnote - Я пришел к тебе с приветом",
+   "TATYANA Isaeva, klimental - Завтра как вчера",
+   "feleex - Как вчера",
+   "Мэлли - Как батя",
+   "ЕГОР КРИД - Вчера"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 81,
+  "cat": "edge",
+  "q": "просто включи музыку",
+  "n": 10,
+  "dt": 56.5,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "rey1gun, Ma use - просто",
+   "Nottoys - Я просто зашёл поиграть",
+   "снова Ева - ССОРИМСЯ, ЧТОБЫ МИРИТЬСЯ",
+   "ANNA ASTI - Чтобы ты тоже",
+   "Ванёк Играет 125, Вася Николаевич - Chicken Gun"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 82,
+  "cat": "edge",
+  "q": "последний хит оливии родриго",
+  "n": 0,
+  "dt": 16.8,
+  "intent": "playlist",
+  "say": "Ничего не нашла, попробуй иначе.",
+  "top": [],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 83,
+  "cat": "edge",
+  "q": "русский аналог тейлор свифт",
+  "n": 10,
+  "dt": 26.1,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Jackie-O - Soda Pop",
+   "Harry Styles - Pop",
+   "prodbycpkshawn - Pop like this Pt. 2",
+   "Tamik - Pop",
+   "ЛореДана - Русский K-Pop"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 84,
+  "cat": "voice",
+  "q": "включи музыку из сериала игра престолов",
+  "n": 10,
+  "dt": 26.4,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Сова - Сериал",
+   "Студия «Феникс» - 13 Карт — Заставка сериала",
+   "Mary Gu - Сломанная игрушка",
+   "natta - у любви так много но (OST оригинального сериала Okko \"Лихие\")",
+   "Комбинация - Russian Girls"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 85,
+  "cat": "voice",
+  "q": "найди песню где поют хей ю",
+  "n": 0,
+  "dt": 17.8,
+  "intent": "playlist",
+  "say": "Ничего не нашла, попробуй иначе.",
+  "top": [],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 86,
+  "cat": "voice",
+  "q": "поставь что-нибудь бодрое",
+  "n": 10,
+  "dt": 33.7,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "DJ Antoha, Энергичная музыка - Бодрая утренняя энергичная музыка",
+   "Маша Сладкова - Бодрая",
+   "Бодо Бородо - Бодрядка",
+   "ТТа самая Bullet, Сантила - Бодрая",
+   "28$UTOK - БОДРЫЙ"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 87,
+  "cat": "voice",
+  "q": "хочу послушать джаз",
+  "n": 10,
+  "dt": 18.7,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Tellman - Jazz",
+   "Джаз, Smooth Jazz, Музыка для ресторанов - Популярный джаз",
+   "Xcho - Джаз",
+   "сам издат, полдень. - джаз балахна",
+   "byekid - Jazz"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 88,
+  "cat": "voice",
+  "q": "дай подборку рока",
+  "n": 10,
+  "dt": 25.5,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "KAZIOL - Rock Your Body",
+   "Gordon - Rock That Body",
+   "Moura Dj, Dj Aimi, DJ Modder, MC VK DA VS - ROCK",
+   "dekma, SHTRIHCOD, dmtboy, diklor - ROCK",
+   "Sparks - Rock, Rock, Rock"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 89,
+  "cat": "voice",
+  "q": "включи песню кукла колдуна",
+  "n": 10,
+  "dt": 25.1,
+  "intent": "playlist",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Сказки колдуна - Куклы",
+   "CAGMO - Кукла колдуна",
+   "LERA - Кукла колдуна",
+   "WhiteCobra - Кукла колдуна",
+   "Polina Poliakova - Кукла колдуна"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 90,
+  "cat": "voice",
+  "q": "что посоветуешь из новинок",
+  "n": 0,
+  "dt": 4.1,
+  "intent": "play",
+  "say": "Ничего не нашла, попробуй иначе.",
+  "top": [],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 91,
+  "cat": "voice",
+  "q": "продолжи в том же духе",
+  "n": 2,
+  "dt": 4.6,
+  "intent": "play",
+  "say": "Нашла 2 трека. Включаю первый.",
+  "top": [
+   "GROS, Яшка - В том же духе",
+   "Skorpion - Продолжай в том же духе"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 92,
+  "cat": "voice",
+  "q": "песня с припевом на английском",
+  "n": 10,
+  "dt": 58.8,
+  "intent": "playlist",
+  "say": "Собрала подборку: 10 треков.",
+  "top": [
+   "Научно-технический рэп, Вадик Погорельский - Припев куплет припев",
+   "FEDUK, OG Buda - Девочка На Трапе",
+   "MIGAS - Конфетка",
+   "Ра Свѣтъ - Припев",
+   "ОСД Горизонт - Вас зажигает"
+  ],
+  "artist_hit": null,
+  "err": null
+ },
+ {
+  "i": 93,
+  "cat": "edge",
+  "q": "зомби",
+  "n": 10,
+  "dt": 5.4,
+  "intent": "play",
+  "say": "Нашла 10 треков. Включаю первый.",
+  "top": [
+   "Серега Пират, qeqoqeq - Зомби апокалипсис",
+   "Adamlar - Zombi",
+   "POLI - Зомби",
+   "Anacondaz - Зомби",
+   "7Leaf - Зомби вайфу"
+  ],
+  "artist_hit": null,
+  "err": null
+ }
+]

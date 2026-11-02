@@ -1,0 +1,15 @@
+# Секреты — НИКОГДА в git (всё в private/, кроме example-шаблона)
+private/*
+!private/.env.example
+
+# Данные/кэши (тяжёлые, не код)
+data/
+logs/
+.venv/
+__pycache__/
+*.pyc
+
+# Временное / редакторы
+*.tmp
+*.swp
+.DS_Store

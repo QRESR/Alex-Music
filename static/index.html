@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f0f10">
+<title>Музыка</title>
+<style>
+  :root {
+    --bg: #0f0f10;
+    --bg2: #1a1a1c;
+    --bg3: #242427;
+    --fg: #f1f1f2;
+    --fg2: #9a9aa0;
+    --accent: #ff4757;
+    --accent2: #ff6b81;
+    --radius: 14px;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: calc(150px + env(safe-area-inset-bottom));
+  }
+  header {
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(15,15,16,.92);
+    backdrop-filter: blur(12px);
+    padding: calc(10px + env(safe-area-inset-top)) 14px 10px;
+    border-bottom: 1px solid #ffffff14;
+  }
+  .search-row { display: flex; gap: 8px; }
+  #q {
+    flex: 1;
+    background: var(--bg3);
+    border: 1px solid transparent;
+    color: var(--fg);
+    border-radius: 999px;
+    padding: 12px 18px;
+    font-size: 16px;
+    outline: none;
+    min-width: 0;
+  }
+  #q:focus { border-color: var(--accent); }
+  #q::placeholder { color: var(--fg2); }
+  .btn-search {
+    background: var(--accent);
+    border: 0; color: #fff;
+    border-radius: 999px;
+    padding: 0 20px;
+    font-size: 15px; font-weight: 600;
+    cursor: pointer;
+  }
+  .btn-search:active { transform: scale(.96); }
+
+  nav.tabs { display: flex; gap: 6px; margin-top: 10px; }
+  nav.tabs button {
+    flex: 1;
+    background: var(--bg3);
+    color: var(--fg2);
+    border: 0;
+    border-radius: 10px;
+    padding: 9px 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  nav.tabs button.active { background: var(--accent); color: #fff; font-weight: 600; }
+
+  main { flex: 1; padding: 12px 14px; max-width: 720px; width: 100%; margin: 0 auto; }
+  .section-title { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--fg2); margin: 16px 2px 8px; }
+
+  .track {
+    display: flex; align-items: center; gap: 12px;
+    background: var(--bg2);
+    border-radius: var(--radius);
+    padding: 10px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: background .15s;
+  }
+  .track:active { background: var(--bg3); }
+  .track.playing { outline: 1px solid var(--accent); }
+  .track .thumb {
+    width: 52px; height: 52px;
+    border-radius: 10px;
+    background: var(--bg3);
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .track .meta { flex: 1; min-width: 0; }
+  .track .title {
+    font-size: 15px; font-weight: 500;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .track .sub { font-size: 13px; color: var(--fg2); margin-top: 2px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .track .act {
+    background: none; border: 0; color: var(--fg2);
+    font-size: 20px; padding: 8px; cursor: pointer;
+    flex-shrink: 0;
+  }
+  .track .act:active { color: var(--accent); }
+  .dur { font-size: 12px; color: var(--fg2); flex-shrink: 0; }
+
+  .empty { text-align: center; color: var(--fg2); padding: 40px 20px; font-size: 15px; line-height: 1.6; }
+
+  .playlist-card {
+    display: flex; align-items: center; gap: 12px;
+    background: linear-gradient(135deg, #26262b, #1c1c1f);
+    border-radius: var(--radius);
+    padding: 14px;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  .playlist-card .ico { font-size: 26px; }
+  .playlist-card .name { font-weight: 600; flex: 1; }
+  .playlist-card .cnt { color: var(--fg2); font-size: 13px; }
+  .playlist-card .del { background:none;border:0;color:var(--fg2);font-size:18px;padding:8px;cursor:pointer; }
+
+  .newpl { display: flex; gap: 8px; margin-bottom: 14px; }
+  .newpl input {
+    flex: 1; background: var(--bg3); border: 1px solid transparent;
+    color: var(--fg); border-radius: 10px; padding: 11px 14px; font-size: 15px; outline: none; min-width: 0;
+  }
+  .newpl input:focus { border-color: var(--accent); }
+  .newpl button {
+    background: var(--bg3); color: var(--fg); border: 0;
+    border-radius: 10px; padding: 0 18px; font-size: 22px; cursor: pointer;
+  }
+
+  .spinner {
+    width: 28px; height: 28px; margin: 30px auto;
+    border: 3px solid var(--bg3); border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin .8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ---- плеер снизу ---- */
+  #player {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
+    background: rgba(26,26,28,.97);
+    backdrop-filter: blur(16px);
+    border-top: 1px solid #ffffff1a;
+    padding: 8px 14px calc(8px + env(safe-area-inset-bottom));
+  }
+  #progress-wrap { cursor: pointer; padding: 4px 0; }
+  #progress {
+    height: 4px; background: var(--bg3); border-radius: 2px; overflow: hidden;
+  }
+  #progress-bar { height: 100%; width: 0%; background: var(--accent); transition: width .2s linear; }
+  .pl-row { display: flex; align-items: center; gap: 10px; }
+  .pl-row .thumb { width: 44px; height: 44px; border-radius: 8px; object-fit: cover; background: var(--bg3); }
+  .pl-row .meta { flex: 1; min-width: 0; }
+  .pl-row .title { font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .pl-row .sub { font-size: 12px; color: var(--fg2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .pl-btn {
+    background: none; border: 0; color: var(--fg);
+    font-size: 22px; width: 42px; height: 42px;
+    border-radius: 50%; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .pl-btn:active { background: var(--bg3); }
+  .pl-btn.main { background: var(--accent); color: #fff; font-size: 24px; }
+  .pl-times { display: flex; justify-content: space-between; font-size: 11px; color: var(--fg2); margin-top: 2px; }
+
+  .hidden { display: none !important; }
+
+  .back { background: none; border: 0; color: var(--accent); font-size: 15px; cursor: pointer; padding: 4px 0 12px; }
+
+  .toast {
+    position: fixed; bottom: 160px; left: 50%; transform: translateX(-50%);
+    background: #000c; color: #fff; padding: 10px 18px; border-radius: 999px;
+    font-size: 14px; z-index: 50; opacity: 0; transition: opacity .3s; pointer-events: none;
+    max-width: 90vw; text-align: center;
+  }
+  .toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="search-row">
+    <input id="q" type="search" placeholder="Исполнитель, трек, альбом…" autocomplete="off">
+    <button class="btn-search" id="btn-search">Найти</button>
+  </div>
+  <nav class="tabs">
+    <button data-tab="search" class="active">Поиск</button>
+    <button data-tab="queue">Очередь</button>
+    <button data-tab="playlists">Подборки</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ПОИСК -->
+  <section id="tab-search">
+    <div id="search-hint" class="empty">Найди музыку — жми на трек, чтобы играть.<br>Кнопка «+» добавляет в подборку.</div>
+    <div id="search-spinner" class="spinner hidden"></div>
+    <div id="search-results"></div>
+  </section>
+
+  <!-- ОЧЕРЕДЬ -->
+  <section id="tab-queue" class="hidden">
+    <div class="section-title">Очередь воспроизведения</div>
+    <div id="queue-list"></div>
+  </section>
+
+  <!-- ПОДБОРКИ -->
+  <section id="tab-playlists" class="hidden">
+    <div id="playlists-view">
+      <div class="section-title">Мои подборки</div>
+      <div class="newpl">
+        <input id="newpl-name" placeholder="Название подборки" maxlength="100">
+        <button id="newpl-add" title="Создать">+</button>
+      </div>
+      <div id="playlists-list"></div>
+    </div>
+    <div id="playlist-detail" class="hidden">
+      <button class="back" id="btn-back">← Все подборки</button>
+      <div class="section-title" id="pl-detail-name"></div>
+      <div id="pl-detail-tracks"></div>
+    </div>
+  </section>
+</main>
+
+<!-- ПЛЕЕР -->
+<div id="player" class="hidden">
+  <div id="progress-wrap">
+    <div id="progress"><div id="progress-bar"></div></div>
+    <div class="pl-times"><span id="t-cur">0:00</span><span id="t-total">0:00</span></div>
+  </div>
+  <div class="pl-row">
+    <img class="thumb" id="pl-thumb" alt="">
+    <div class="meta">
+      <div class="title" id="pl-title">—</div>
+      <div class="sub" id="pl-sub"></div>
+    </div>
+    <button class="pl-btn" id="btn-prev" title="Предыдущий">⏮</button>
+    <button class="pl-btn main" id="btn-play" title="Играть/пауза">▶</button>
+    <button class="pl-btn" id="btn-next" title="Следующий">⏭</button>
+  </div>
+</div>
+
+<audio id="audio" preload="auto"></audio>
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const audio = $('#audio');
+
+let queue = [];          // массив треков текущей очереди
+let qIndex = -1;         // текущий индекс
+let currentTab = 'search';
+
+// ---------- утилиты ----------
+function fmt(s) {
+  s = Math.max(0, Math.floor(s || 0));
+  return Math.floor(s/60) + ':' + String(s%60).padStart(2,'0');
+}
+function toast(msg) {
+  const t = $('#toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._tm);
+  t._tm = setTimeout(() => t.classList.remove('show'), 2500);
+}
+function trackEl(tr, opts = {}) {
+  const el = document.createElement('div');
+  el.className = 'track';
+  el.dataset.id = tr.id;
+  const sub = [tr.artist, fmt(tr.duration)].filter(Boolean).join(' · ');
+  el.innerHTML = `
+    <img class="thumb" src="${tr.thumbnail || ''}" alt="" loading="lazy"
+         onerror="this.style.visibility='hidden'">
+    <div class="meta">
+      <div class="title"></div>
+      <div class="sub"></div>
+    </div>
+    <button class="act" data-act="add" title="В подборку">+</button>
+    ${opts.remove ? '<button class="act" data-act="remove" title="Убрать">✕</button>' : ''}`;
+  el.querySelector('.title').textContent = tr.title || 'Без названия';
+  el.querySelector('.sub').textContent = sub;
+  el.addEventListener('click', e => {
+    const act = e.target.closest('[data-act]');
+    if (act) {
+      e.stopPropagation();
+      if (act.dataset.act === 'add') addToPlaylistFlow(tr);
+      else if (act.dataset.act === 'remove') opts.remove(tr);
+      return;
+    }
+    if (opts.play) opts.play(tr);
+  });
+  return el;
+}
+
+// ---------- вкладки ----------
+document.querySelectorAll('nav.tabs button').forEach(b => {
+  b.addEventListener('click', () => switchTab(b.dataset.tab));
+});
+function switchTab(tab) {
+  currentTab = tab;
+  document.querySelectorAll('nav.tabs button').forEach(b =>
+    b.classList.toggle('active', b.dataset.tab === tab));
+  $('#tab-search').classList.toggle('hidden', tab !== 'search');
+  $('#tab-queue').classList.toggle('hidden', tab !== 'queue');
+  $('#tab-playlists').classList.toggle('hidden', tab !== 'playlists');
+  if (tab === 'queue') renderQueue();
+  if (tab === 'playlists') { $('#playlists-view').classList.remove('hidden'); $('#playlist-detail').classList.add('hidden'); renderPlaylists(); }
+}
+
+// ---------- поиск ----------
+async function doSearch() {
+  const q = $('#q').value.trim();
+  if (!q) return;
+  $('#search-hint').classList.add('hidden');
+  $('#search-results').innerHTML = '';
+  $('#search-spinner').classList.remove('hidden');
+  try {
+    const r = await fetch('search?q=' + encodeURIComponent(q) + '&limit=20');
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const d = await r.json();
+    $('#search-spinner').classList.add('hidden');
+    if (!d.results.length) {
+      $('#search-results').innerHTML = '<div class="empty">Ничего не найдено</div>';
+      return;
+    }
+    d.results.forEach(tr => {
+      $('#search-results').appendChild(trackEl(tr, {
+        play: t => playFromList(d.results, t)
+      }));
+    });
+  } catch (e) {
+    $('#search-spinner').classList.add('hidden');
+    $('#search-results').innerHTML = '<div class="empty">Ошибка поиска: ' + e.message + '</div>';
+  }
+}
+$('#btn-search').addEventListener('click', doSearch);
+$('#q').addEventListener('keydown', e => { if (e.key === 'Enter') doSearch(); });
+
+// ---------- очередь и воспроизведение ----------
+function playFromList(list, track) {
+  queue = list.slice();
+  qIndex = queue.indexOf(track);
+  if (qIndex < 0) { queue = [track]; qIndex = 0; }
+  loadCurrent(true);
+}
+function loadCurrent(autoplay) {
+  const tr = queue[qIndex];
+  if (!tr) return;
+  $('#player').classList.remove('hidden');
+  $('#pl-title').textContent = tr.title || '—';
+  $('#pl-sub').textContent = tr.artist || '';
+  $('#pl-thumb').src = tr.thumbnail || '';
+  $('#t-total').textContent = fmt(tr.duration);
+  audio.src = 'stream/' + tr.id;
+  if (autoplay) audio.play().catch(() => toast('Не удалось запустить воспроизведение'));
+  document.querySelectorAll('.track').forEach(el =>
+    el.classList.toggle('playing', el.dataset.id === tr.id));
+}
+function next() {
+  if (qIndex < queue.length - 1) { qIndex++; loadCurrent(true); }
+  else { audio.pause(); }
+}
+function prev() {
+  if (audio.currentTime > 3) { audio.currentTime = 0; return; }
+  if (qIndex > 0) { qIndex--; loadCurrent(true); }
+  else audio.currentTime = 0;
+}
+$('#btn-next').addEventListener('click', next);
+$('#btn-prev').addEventListener('click', prev);
+$('#btn-play').addEventListener('click', () => {
+  if (qIndex < 0) { toast('Сначала выбери трек'); return; }
+  if (audio.paused) audio.play(); else audio.pause();
+});
+audio.addEventListener('play',  () => { $('#btn-play').textContent = '⏸'; });
+audio.addEventListener('pause', () => { $('#btn-play').textContent = '▶'; });
+audio.addEventListener('ended', next);
+audio.addEventListener('error', () => {
+  if (audio.src) toast('Трек недоступен (ошибка источника)');
+});
+audio.addEventListener('timeupdate', () => {
+  const d = audio.duration || 0;
+  $('#progress-bar').style.width = d ? (audio.currentTime / d * 100) + '%' : '0%';
+  $('#t-cur').textContent = fmt(audio.currentTime);
+  if (d) $('#t-total').textContent = fmt(d);
+});
+$('#progress-wrap').addEventListener('click', e => {
+  const d = audio.duration;
+  if (!d) return;
+  const r = e.currentTarget.getBoundingClientRect();
+  audio.currentTime = ((e.clientX - r.left) / r.width) * d;
+});
+
+function renderQueue() {
+  const box = $('#queue-list');
+  box.innerHTML = '';
+  if (!queue.length) {
+    box.innerHTML = '<div class="empty">Очередь пуста</div>';
+    return;
+  }
+  queue.forEach((tr, i) => {
+    const el = trackEl(tr, { play: () => { qIndex = i; loadCurrent(true); } });
+    if (i === qIndex) el.classList.add('playing');
+    box.appendChild(el);
+  });
+}
+
+// ---------- подборки ----------
+let playlistsCache = [];
+let openPlaylist = null;
+
+async function renderPlaylists() {
+  try {
+    const r = await fetch('api/playlists');
+    const d = await r.json();
+    playlistsCache = d.playlists;
+    const box = $('#playlists-list');
+    box.innerHTML = '';
+    if (!d.playlists.length) {
+      box.innerHTML = '<div class="empty">Пока пусто.<br>Создай подборку и добавь в неё треки кнопкой «+».</div>';
+      return;
+    }
+    d.playlists.forEach(p => {
+      const el = document.createElement('div');
+      el.className = 'playlist-card';
+      el.innerHTML = `<span class="ico">🎵</span>
+        <span class="name"></span>
+        <span class="cnt">${p.tracks.length} тр.</span>
+        <button class="del" title="Удалить">🗑</button>`;
+      el.querySelector('.name').textContent = p.name;
+      el.querySelector('.del').addEventListener('click', async e => {
+        e.stopPropagation();
+        if (!confirm('Удалить подборку «' + p.name + '»?')) return;
+        await fetch('api/playlists/' + p.id, { method: 'DELETE' });
+        renderPlaylists();
+      });
+      el.addEventListener('click', () => openPl(p));
+      box.appendChild(el);
+    });
+  } catch (e) {
+    $('#playlists-list').innerHTML = '<div class="empty">Ошибка загрузки</div>';
+  }
+}
+function openPl(p) {
+  openPlaylist = p;
+  $('#playlists-view').classList.add('hidden');
+  $('#playlist-detail').classList.remove('hidden');
+  $('#pl-detail-name').textContent = p.name;
+  const box = $('#pl-detail-tracks');
+  box.innerHTML = '';
+  if (!p.tracks.length) {
+    box.innerHTML = '<div class="empty">В подборке нет треков.<br>Найди музыку во вкладке «Поиск» и жми «+».</div>';
+    return;
+  }
+  p.tracks.forEach(tr => {
+    box.appendChild(trackEl(tr, {
+      play: t => playFromList(p.tracks, t),
+      remove: async t => {
+        await fetch(`api/playlists/${p.id}/tracks/${t.id}`, { method: 'DELETE' });
+        const r = await fetch('api/playlists/' + p.id);
+        openPl(await r.json());
+      }
+    }));
+  });
+}
+$('#btn-back').addEventListener('click', () => {
+  $('#playlists-view').classList.remove('hidden');
+  $('#playlist-detail').classList.add('hidden');
+  renderPlaylists();
+});
+$('#newpl-add').addEventListener('click', async () => {
+  const name = $('#newpl-name').value.trim();
+  if (!name) { toast('Введи название'); return; }
+  await fetch('api/playlists', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name })
+  });
+  $('#newpl-name').value = '';
+  renderPlaylists();
+});
+
+async function addToPlaylistFlow(tr) {
+  try {
+    const r = await fetch('api/playlists');
+    const d = await r.json();
+    if (!d.playlists.length) {
+      if (!confirm('Подборок пока нет. Создать «Избранное» и добавить туда трек «' + tr.title + '»?')) return;
+      const c = await fetch('api/playlists', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: 'Избранное' })
+      });
+      const p = await c.json();
+      await fetch(`api/playlists/${p.id}/tracks`, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(tr)
+      });
+      toast('Добавлено в «' + p.name + '»');
+      return;
+    }
+    const names = d.playlists.map((p, i) => `${i + 1}. ${p.name} (${p.tracks.length})`).join('\n');
+    const ans = prompt('В какую подборку добавить «' + tr.title + '»?\n\n' + names + '\n\nНомер (или 0 — создать новую):');
+    if (ans === null) return;
+    let idx = parseInt(ans, 10) - 1;
+    if (isNaN(idx) || idx < 0) {
+      const nm = prompt('Название новой подборки:', tr.artist || 'Новая');
+      if (!nm) return;
+      const c = await fetch('api/playlists', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: nm })
+      });
+      const p = await c.json();
+      await fetch(`api/playlists/${p.id}/tracks`, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(tr)
+      });
+      toast('Добавлено в «' + p.name + '»');
+      return;
+    }
+    const p = d.playlists[idx];
+    if (!p) { toast('Нет такой подборки'); return; }
+    await fetch(`api/playlists/${p.id}/tracks`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(tr)
+    });
+    toast('Добавлено в «' + p.name + '»');
+  } catch (e) {
+    toast('Ошибка: ' + e.message);
+  }
+}
+
+// старт
+renderPlaylists();
+</script>
+</body>
+</html>

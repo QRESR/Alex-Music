@@ -1,0 +1,47 @@
+rows: 28
+unfused b1   n=4 tracks=134-266s infer mean= 9.59s range=5.88-13.60s  per_window=0.492s  rss=646-1304MB
+unfused b6   n=4 tracks=134-266s infer mean= 5.54s range=3.84-8.50s  per_window=0.286s  rss=799-835MB
+music b1     n=4 tracks=134-266s infer mean=13.56s range=9.23-18.44s  per_window=0.707s  rss=811-835MB
+music b6     n=1 tracks=266-266s infer mean=11.30s range=11.30-11.30s  per_window=0.419s  rss=1075-1075MB
+mms b1       n=4 tracks=134-266s infer mean=15.55s range=12.03-21.97s  per_window=0.809s  rss=812-835MB
+
+full mode (rand_trunc => only random 10s used):
+   full_a               infer=0.84s rss=791MB
+   full_b               infer=0.83s rss=791MB
+   uf_full              infer=0.92s rss=647MB
+   uf_full2             infer=0.55s rss=630MB
+   uf_full_techno_a     infer=0.6s rss=628MB
+   uf_full_techno_b     infer=0.9s rss=629MB
+excerpt(30s) infer mean: 0.72 s (still only 10s crop)
+
+-- determinism / truncation (chosen model = unfused):
+   full run1 vs run2 (techno):      0.7822
+   chunked run1 vs run2 (techno):   1.0
+   chunked b1 vs b6 (techno):       1.0
+   full(random crop) vs chunked:    0.8736
+
+-- music-model full pair (same pitfall): 0.905
+
+-- matrix CLAP unfused (chosen): off-diag min=0.141 max=0.738 mean=0.387
+    chopin    +1.000 +0.280 +0.141 +0.177
+    blues     +0.280 +1.000 +0.391 +0.738
+    techno    +0.141 +0.391 +1.000 +0.596
+    rock      +0.177 +0.738 +0.596 +1.000
+
+-- matrix larger_clap_music (DEGENERATE): off-diag min=0.924 max=0.995 mean=0.967
+    chopin_c  +1.000 +0.970 +0.924 +0.977
+    blues_ck  +0.970 +1.000 +0.970 +0.995
+    techno_c  +0.924 +0.970 +1.000 +0.968
+    rock_ck   +0.977 +0.995 +0.968 +1.000
+
+-- matrix larger_clap_music_and_speech: off-diag min=-0.051 max=0.321 mean=0.126
+    chopin_c  +1.000 +0.185 +0.021 -0.051
+    blues_ck  +0.185 +1.000 +0.058 +0.220
+    techno_c  +0.021 +0.058 +1.000 +0.321
+    rock_ck_  -0.051 +0.220 +0.321 +1.000
+throughput b1 180s track: 9.9s -> 365 tracks/hour
+throughput b1 240s track: 12.8s -> 281 tracks/hour
+throughput b6 180s track: 6.1s -> 586 tracks/hour
+throughput b6 240s track: 7.9s -> 458 tracks/hour
+
+max RSS all rows: 1304.0
