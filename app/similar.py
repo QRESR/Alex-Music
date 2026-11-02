@@ -329,6 +329,25 @@ async def build_similar(
         "similar сбор: пул=%d src=%s seed=%r (лимит=%d)",
         len(pool), src_counts, artist_anchor or ctx[:30], limit,
     )
+
+    # ---- ФИЛЬТР ПО ГОДАМ (ТЗ «не старше 7 лет» → с 2019) --------------------
+    # В mode=similar возраст НЕ фильтровался (is_old применялся только к rotor
+    # и mood) → в подборку попадали треки 1990/1999/2009. Отсекаем старше 7 лет
+    # (2019 и новее) НА ПУЛЕ (до CLAP/ранжирования). Треки БЕЗ года не режем.
+    # Guard: если свежих осталось < лимита — не вымирать, оставляем пул как был.
+    _now_year = int(__import__("time").gmtime(__import__("time").time()).tm_year)
+    _fresh_pool = [
+        t for t in pool
+        if not (getattr(t, "year", 0) or 0) or (_now_year - (t.year or 0)) <= 7
+    ]
+    if len(_fresh_pool) >= max(limit, 5):
+        if len(_fresh_pool) < len(pool):
+            logger.info(
+                "similar age: %d -> %d (убрано старше 7 лет / до 2019)",
+                len(pool), len(_fresh_pool),
+            )
+        pool = _fresh_pool
+
     # Фоновый добор эмбеддингов: сразу после сбора пула, ответ НЕ ждём.
     # К следующему вызову похожих покрытие CLAP вырастет и audio_sim
     # включится даже для свежих кандидатов (порог 50%).
