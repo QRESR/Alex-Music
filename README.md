@@ -31,8 +31,8 @@
 Откройте терминал (командную строку) и выполните:
 
 ```bash
-git clone https://github.com/QRESR/alexmusic.git
-cd alexmusic
+git clone https://github.com/QRESR/Alex-Music.git
+cd Alex-Music
 ```
 
 ### Шаг 2. Поставить Python-зависимости
